@@ -5,7 +5,8 @@ spring:
       auto-offset-reset: earliest
     # change this property if you are using your own
     # Kafka cluster or your Docker IP is different
-    bootstrap-servers: localhost:29092
+#    bootstrap-servers: kafka:9092
+    bootstrap-servers: kafka:29092
 #    bootstrap-servers: 192.168.246.30:29092
 
 tpd:
@@ -16,4 +17,4 @@ tpd:
 server.port: 8081
 
 camunda:
-  endpoint: http://127.0.0.1:8080/startEvent
+  endpoint: http://camundacore:8080/startEvent
